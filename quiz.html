@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackman - Cheez-It Quiz</title>
+
+    <!--favicon-->
+    <link rel="icon" href="images/cheese.png" type="image/gif" sizes="32x32">
+    <!--author and description-->
+    <meta name="author" content="James Blackman">
+    <meta name="description" content="Gallery Website Add-on Project">
+    <meta property="og:image" content="images/cheese.png">
+    <meta property="og:description" content="The best snack ever! Cheez-Its">
+    <meta property="og:title" content="Cheez-It Fan Page">
+
+    
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <nav>
+        <ul id="navbar">
+            <li class="listItem"><a href="index.html">Home</a></li>
+            <li class="listItem"><a href="index.html #productsContainer">Products</a></li>
+            <li class="listItem"><a class="active" href="quiz.html">Cheez-it Quiz</a></li>
+            <li class="listItem" id="logo"><a href="index.html"><img src="images/logo-cheez-it.svg"></a></li>
+            <li style="float: right;">
+                <label class="switch">
+                <input type="checkbox" id="darkmodeCheckbox">
+                <span class="slider round"></span>
+                </label>
+            </li>
+            <li id="checkboxLabel" style="float: right;"><a href="">Dark Mode:</a></li>
+        </ul>
+    </nav>
+
+    <div id="quiz">
+        <div id="quizHeader">
+            <h1>How well do you know Cheez-Its?</h1>
+            <p>Test your knowledge about America's favorite cheezy cracker.</p>
+        </div>
+        <div id="quizBox">
+            <form action="javascript:submit()">
+                <div id="question1" class="questions">
+                    <p>The Cheez-It mascot is a...</p>
+                    <input type="radio" name="q1">
+                    <label for="radio">tiger.</label><br>
+                    <input type="radio" name="q1">
+                    <label for="radio">cheetah.</label><br>
+                    <input type="radio" name="q1" id="q1CorrectRadio"><!--correct-->
+                    <label for="radio">wheel of cheese.</label><br>
+                    <input type="radio" name="q1">
+                    <label for="radio">octopus.</label>
+                </div>
+                <div id="question2" class="questions">
+                    <p>Cheez-Its get their orange color from...</p>
+                    <input type="radio" name="q2">
+                    <label for="radio">100% real cheese.</label><br>
+                    <input type="radio" name="q2" id="q2CorrectRadio"><!--correct-->
+                    <label for="radio">annatto extract.</label><br>
+                    <input type="radio" name="q2">
+                    <label for="radio">skim milk.</label><br>
+                    <input type="radio" name="q2">
+                    <label for="radio">food dye.</label>
+                </div>
+                <div id="question3" class="questions">
+                    <p>As of 2020, Cheez-Its have been around for how many years?</p>
+                    <input type="radio" name="q3">
+                    <label for="radio">38</label><br>
+                    <input type="radio" name="q3" id="q3CorrectRadio"><!--correct-->
+                    <label for="radio">99</label><br>
+                    <input type="radio" name="q3">
+                    <label for="radio">60</label><br>
+                    <input type="radio" name="q3">
+                    <label for="radio">212</label>
+                </div>
+                <div id="question4" class="questions">
+                    <p>Cheez-It's parent company is...</p>
+                    <input type="radio" name="q4" id="q4CorrectRadio"><!--correct-->
+                    <label for="radio">Kelloggs.</label><br>
+                    <input type="radio" name="q4">
+                    <label for="radio">Shamrock Farms.</label><br>
+                    <input type="radio" name="q4">
+                    <label for="radio">General Mills.</label><br>
+                    <input type="radio" name="q4">
+                    <label for="radio">Walmart.</label>
+                </div>
+                <div id="question5" class="questions">
+                    <p>What company invented the delicious Cheez-It cracker.</p>
+                    <input type="radio" name="q5">
+                    <label for="radio">Kelloggs.</label><br>
+                    <input type="radio" name="q5">
+                    <label for="radio">General Mills.</label><br>
+                    <input type="radio" name="q5">
+                    <label for="radio">Sunshine Biscuits.</label><br>
+                    <input type="radio" name="q5" id="q5CorrectRadio"><!--correct-->
+                    <label for="radio">The Green Green Company.</label>
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
