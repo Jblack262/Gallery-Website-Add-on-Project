@@ -1,18 +1,38 @@
+//defining global variables for grading quiz
 var questionsRight = 0;
 var score;
 
+//changes style of things when darkmode switch is checked or not
 var darkmodeCheckbox = document.querySelector('input[type="checkbox"]');
-
 darkmodeCheckbox.addEventListener('change', function () {
     if (darkmodeCheckbox.checked) {
-    wantDarkMode = true;
     document.body.style.backgroundColor = "black";
+    document.getElementById("question1").style.backgroundColor = "black";
+    document.getElementById("question1").style.color = "white";
+    document.getElementById("question2").style.backgroundColor = "black";
+    document.getElementById("question2").style.color = "white";
+    document.getElementById("question3").style.backgroundColor = "black";
+    document.getElementById("question3").style.color = "white";
+    document.getElementById("question4").style.backgroundColor = "black";
+    document.getElementById("question4").style.color = "white";
+    document.getElementById("question5").style.backgroundColor = "black";
+    document.getElementById("question5").style.color = "white";
 } else {
-    wantDarkMode = false;
     document.body.style.backgroundColor = "white";
+    document.getElementById("question1").style.backgroundColor = "white";
+    document.getElementById("question1").style.color = "black";
+    document.getElementById("question2").style.backgroundColor = "white";
+    document.getElementById("question2").style.color = "black";
+    document.getElementById("question3").style.backgroundColor = "white";
+    document.getElementById("question3").style.color = "black";
+    document.getElementById("question4").style.backgroundColor = "white";
+    document.getElementById("question4").style.color = "black";
+    document.getElementById("question5").style.backgroundColor = "white";
+    document.getElementById("question5").style.color = "black";
     }
 });
 
+//grades the trivia quiz
 function submit() {
     var q1Answer = document.getElementById("q1CorrectRadio").checked;
     var q2Answer = document.getElementById("q2CorrectRadio").checked;

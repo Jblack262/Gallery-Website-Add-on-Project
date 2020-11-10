@@ -10,12 +10,12 @@ body {
 /*Navbar*/
 #navbar {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     background: radial-gradient(red, maroon);
-    position: fixed;
     width: calc(100% - 20px);
+    position: fixed;
+    top: -16px;
   }
   #navbar .listItem {
     float: left;
@@ -218,6 +218,7 @@ body {
   background: radial-gradient(red, maroon);
   color: white;
   margin: 15px;
+  margin-top: 65px;
   padding: 20px;
   padding-left: 100px;
   padding-right: 100px;
@@ -233,9 +234,19 @@ body {
 }
 .questions {
   padding: 15px;
+  padding-left: 35%;
+  padding-right: 35%;
   margin: 15px;
-  background-color:rgb(86, 86, 86);
+  background-color:white;
   border-radius: 15px;
+  color: black;
+  text-align: left;
+}
+.questions p {
+  text-align: center;
+}
+.questions input, .questions label {
+  justify-content: center;
 }
 
 /*changes css when screen size is below 590 pixels*/
